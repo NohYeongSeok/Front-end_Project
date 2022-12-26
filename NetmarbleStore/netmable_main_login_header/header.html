@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider({
+            pager:false,
+            auto:true,
+            autoHover: true,
+            controls: true,
+            infiniteLoop:true,
+            slideWidth:1920
+          });
+        });
+        $(window).scroll(function () { 
+        	var scrollValue = $(document).scrollTop(); 
+                if(scrollValue>=100){
+                $(".sticky").css({"backgroundColor":"rgba(255,255,255,0.9)"});
+                $("header h2").css({"transform":"translateY(-80%)"})
+                $(".best,.lang").css({"transform":"translateY(-20%)"})
+                $(".icon").css({"transform":"translateY(-30%)"})
+            }   
+            else{
+                $(".sticky").css({"backgroundColor":"transparent"});
+                $("header h2,.best,.lang,.icon").css({"transform":"translateY(0%)"})
+            }
+            });
+      </script>
+</head>
+<body>
+    <header>
+        <div class="sticky">
+            <div class="w1720">
+                <h2><img src="https://www.netmarblestore.com/web/upload/category/editor/2021/05/13/c94f19709256f998ba9c90df4dcf959e.png" alt=""></h2>
+                <div class="best">
+                    <ul>
+                        <li><a href="#">BEST</a></li>
+                        <li><a href="#">NEW</a></li>
+                        <li class="main_menu1"><a href="#">카테고리</a>
+                        <ul class="sub_menu1">
+                            <li><a href="#">전체보기</a></li>
+                            <li class="sub_menu01"><a href="#">키덜트</a><span><img src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu1">
+                                <li><a href="#">인형</a></li>
+                                <li><a href="#">피규어</a></li>
+                                <li><a href="#">완구</a></li>
+                            </ul></li>
+                            <li class="sub_menu02"><a href="#">디자인문구</a><span><img src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu2">
+                                <li><a href="#">노트/메모</a></li>
+                                <li><a href="#">볼펜</a></li>
+                                <li><a href="#">파일</a></li>
+                                <li><a href="#">스티커</a></li>
+                                <li><a href="#">데스크소품</a></li>
+                            </ul></li>
+                            <li class="sub_menu03"><a href="#">리빙</a><span><img src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu3">
+                                <li><a href="#">컵/텀블러</a></li>
+                                <li><a href="#">생활소품</a></li>
+                                <li><a href="#">쿠션</a></li>
+                                <li><a href="#">욕실용품</a></li>
+                            </ul></li>
+                            <li class="sub_menu04"><a href="#">의류</a><span><img src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu4">
+                                <li><a href="#">상의</a></li>
+                            </ul></li>
+                            <li class="sub_menu05"><a href="#">잡화</a><span><img  src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu5">
+                                <li><a href="#">파우치</a></li>
+                                <li><a href="#">우산</a></li>
+                                <li><a href="#">양말</a></li>
+                                <li><a href="#">가방</a></li>
+                                <li><a href="#">패션소품</a></li>
+                            </ul></li>
+                            <li class="sub_menu06"><a href="#">차량/레져</a><span><img  src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu6">
+                                <li><a href="#">여행용품</a></li>
+                                <li><a href="#">차량용품</a></li>
+                                <li><a href="#">물놀이</a></li>
+                                <li><a href="#">골프용품</a></li>
+                            </ul></li>
+                            <li class="sub_menu07"><a href="#">디지털</a><span><img  src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu7">
+                                <li><a href="#">핸드폰 액세서리</a></li>
+                                <li><a href="#">pc/노트북 액세서리</a></li>
+                                <li><a href="#">소형가전</a></li>
+                                <li><a href="#">계절가전</a></li>
+                            </ul></li>
+                            <li class="sub_menu08"><a href="#">도서출판</a><span><img src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu8">
+                                <li><a href="#">서적</a></li>
+                                <li><a href="#">퍼즐</a></li>
+                                <li><a href="#">포스터</a></li>
+                                <li><a href="#">음반</a></li>
+                            </ul></li>
+                        </ul></li>
+                        <li class="main_menu2"><a href="#">캐릭터</a>
+                        <ul class="sub_menu2">
+                            <li><a href="#">넷마블프렌즈</a></li>
+                            <li><a href="#">KUYA</a></li>
+                            <li><a href="#">스톤에이지</a></li>
+                            <li><a href="#">세븐나이츠</a></li>
+                            <li><a href="#">모두의마블</a></li>
+                            <li><a href="#">BTS World</a></li>
+                            <li><a href="#">제2의 나라</a></li>
+                        </ul></li>
+                        <li class="main_menu3"><a href="#">고객센터</a>
+                        <ul class="sub_menu3">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul></li>
+                    </ul>
+                </div>
+                <div class="lang">
+                    <ul class="main_menu4">
+                        <li><a href="#">Language&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
+                        <li><a href="#">한국어</a></li>
+                        <li><img width="10" height="10" src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></li>
+                        <ul class="sub_menu4">
+                            <li><a href="#">한국어</a></li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="icon">
+                    <ul>
+                        <li class="main_menu5"><a href="#"><img src="https://www.netmarblestore.com/morenvyimg/top_myshop.png" alt=""></a>
+                        <ul class="sub_menu5">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">주문조회</a></li>
+                        </ul></li>
+                        <li><a href="#"><img src="https://www.netmarblestore.com/morenvyimg/top_cart.png" alt=""></a></li>
+                        <li><a href="#"><img src="https://www.netmarblestore.com/morenvyimg/top_search.png" alt=""></a></li>
+                    </ul>
+                </div>
+        </div>
+    </header>

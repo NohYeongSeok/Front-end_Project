@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="nyoungseok">
+    <meta name="description" content="Portfolio, WWF Korea"> 
+    <title>세계자연기금 홈페이지, WWF Korea</title> 
+    <link rel="shortcut icon" href="./images/favicon-32x32.png"> 
+    <link rel="apple-touch-icon=precomposed" href="./images/apple-icon-144x144.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/wwf.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <!-- JS 플러그인 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+    <script src="./js/jquery.scrollTo.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- Header -->
+        <header>
+            <div class="header_wrap w1480 cf">
+                <div class="header_left">
+                    <h1 class="logo">
+                        <a href="#"><img src="./images/logo.png" alt="WWF로고"></a>
+                    </h1>
+                    <nav class="gnb">
+                        <ul class="left_depth_one">
+                            <li>
+                                <a href="#slider">소개</a>
+                            </li>
+                            <li>
+                                <a href="#news">소식</a>
+                            </li>
+                            <li>
+                                <a href="#mid_banner">후원</a>
+                            </li>
+                            <li>
+                                <a href="#main_exer">활동</a>
+                            </li>
+                            <li>
+                                <a href="#new_deal">자료</a>
+                            </li>
+                            <li>
+                                <a href="#camp">캠페인</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header_right">
+                    <ul class="right_depth_one">
+                        <li>
+                            <a href="#">자주묻는 질문</a>
+                        </li>
+                        <li>
+                            <a href="#">마이페이지</a>
+                        </li>
+                        <li class="right_depth_one_search">
+                            <a href="#">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="right_depth_one_sponsor">
+                            <a href="#">후원하기</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- /Header -->
+
+        <!-- Main -->
+        <main role="main">
+
+            <!-- Slider -->
+            <article class="slider" id="slider">
+                <div id="gallery_wrap">
+                    <ul class="slide_gallery">
+                        <li>
+                            <div class="slide_text oswald">
+                                <h2>
+                                    Building a Future in which<br>
+                                    People live in Harmony with Nature
+                                </h2>
+                                <p>WWF와 함께 만드는 사람과 자연이 조화로운 미래</p>
+                                <a href="#gallery_wrap">MORE</a>
+                            </div>
+                            <img src="./images/slide01.jpg" alt="슬라이드01">
+                        </li>                       
+                        <li>
+                            <div class="slide_text oswald">
+                                <a href="#gallery_wrap">MORE</a>
+                            </div>
+                            <img src="./images/slide02.jpg" alt="슬라이드02">
+                        </li>                       
+                        <li>
+                            <div class="slide_text oswald">
+                                <h2>Living Planet Report 2022</h2>
+                                <p>지구생명보고서 2022 발간 소식보기!</p>
+                                <a href="#gallery_wrap">MORE</a>
+                            </div>
+                            <img src="./images/slide03.jfif" alt="슬라이드03">
+                        </li>                       
+                    </ul>
+                </div>
+            </article>
+            <!-- /Slider -->
+            <!-- News -->
+            <article class="news" id="news">
+                <div class="news_wrap w1480">
+                    <h2>최신 소식</h2>
+                    <div class="news_title">
+                        <input type="checkbox" id="news_title_check_fst" name="news_title_check" onclick="checkOnlyOne(this)" checked>
+                        <label for="news_title_check_fst">
+                            <h3 class="news_sub_fst">언론보도</h3>
+                            <div class="btn_go_board"></div>
+                        </label>
+                        <input type="checkbox" id="news_title_check_snd" name="news_title_check" onclick="checkOnlyOne(this)">
+                        <label for="news_title_check_snd">
+                            <h3 class="news_sub_snd">소식</h3>
+                            <div class="btn_go_board"></div>
+                        </label>
+                        <input type="checkbox" id="news_title_check_trd" name="news_title_check" onclick="checkOnlyOne(this)">
+                        <label for="news_title_check_trd">
+                            <h3 class="news_sub_trd">판다메일</h3>
+                            <div class="btn_go_board"></div>
+                        </label>
+                    </div>
+                    <div class="news_content w1480" id="news_content_fst">
+                        <ul>
+                            <li>
+                                <div class="news_content_Box">
+                                    <a href="#news">
+                                        <div class="news_content_img">
+                                            <img src="./images/news01.jpg" alt="뉴스1"> 
+                                        </div>
+                                        <div class="news_content_txt">
+                                            <p class="news_content_date">21 Nov 2022</p>
+                                            <h3>[보도자료] COP27 실패로 인해 손실&middot;&middot;&middot;</h3>
+                                            <p class="news_content_content">- WWF, COP26보다 기후목표 나아지지 않았다고 평가 - 전 세계는 기후목표, 재정, 신뢰를&middot;&middot;&middot;</p>
+                                            <div class="go_news_content"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news_content_Box">
+                                    <a href="#news">
+                                        <div class="news_content_img">
+                                            <img src="./images/news02.jpg" alt="뉴스2"> 
+                                        </div>
+                                        <div class="news_content_txt">
+                                            <p class="news_content_date">06 Nov 2022</p>
+                                            <h3>[보도자료] WWF "COP27, 기후 재&middot;&middot;&middot;</h3>
+                                            <p class="news_content_content">- 1.5도 목표 달성을 위해 각국 정부가 선언한 약속을 행동으로 바꿀 것을 촉구한다. -&middot;&middot;&middot;</p>
+                                            <div class="go_news_content"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news_content_Box">
+                                    <a href="#news">
+                                        <div class="news_content_img">
+                                            <img src="./images/news03.jpg" alt="뉴스3"> 
+                                        </div>
+                                        <div class="news_content_txt">
+                                            <p class="news_content_date">26 Oct 2022</p>
+                                            <h3>[보도자료] PACT 참여 9개 기업, 1&middot;&middot;&middot;</h3>
+                                            <p class="news_content_content">- 플라스틱 감축 선언 이니셔티브 PACT 가입 9개의 기업, 1년 동안 플라스틱 5,120톤 감축&middot;&middot;&middot;</p>
+                                            <div class="go_news_content"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="news_content w1480" id="news_content_snd">
+                        <ul>
+                            <li>
+                                <div class="news_content_Box">
+                                    <a href="#news">
+                                        <div class="news_content_img">
+                                            <img src="./images/news04.jpg" alt="뉴스4"> 
+                                        </div>
+                                        <div class="news_content_txt">
+                                            <p class="news_content_date">06 Dec 2022</p>
+                                            <h3>[소식] WWF, ESG포럼에서 생물다양성&middot;&middot;&middot;</h3>
+                                            <p class="news_content_content">2022 대한민국 ESG친환경대전의 ESG포럼에서 생물다양성 위기와 회복을 위한 기업의&middot;&middot;&middot;</p>
+                                            <div class="go_news_content"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news_content_Box">
+                                    <a href="#news">
+                                        <div class="news_content_img">
+                                            <img src="./images/news05.jpg" alt="뉴스5"> 
+                                        </div>
+                                        <div class="news_content_txt">
+                                            <p class="news_content_date">22 Nov 2022</p>
+                                            <h3>[이벤트] 생명의 연결고리 : 도토리숲&middot;&middot;&middot;</h3>
+                                            <p class="news_content_content">11월 22일부터 WWF와 함께하는 '생명의 연결고리:도토리 숲 만들기' 캠페인이 시작&middot;&middot;&middot;</p>
+                                            <div class="go_news_content"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news_content_Box">
+                                    <a href="#news">
+                                        <div class="news_content_img">
+                                            <img src="./images/news06.jpg" alt="뉴스6"> 
+                                        </div>
+                                        <div class="news_content_txt">
+                                            <p class="news_content_date">17 Nov 2022</p>
+                                            <h3>[공지] 2022 연간기부금 모금액 및&middot;&middot;&middot;</h3>
+                                            <p class="news_content_content">자료는 국세청 홈택스 (www.hometax.go.kr)에 접속하시어 확인할 수 있습니다.&middot;&middot;&middot;</p>
+                                            <div class="go_news_content"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="news_content w1480" id="news_content_trd">
+                        <ul>
+                            <li>
+                                <div class="news_content_Box">
+                                    <a href="#news">
+                                        <div class="news_content_img">
+                                            <img src="./images/news07.jpg" alt="뉴스7"> 
+                                        </div>
+                                        <div class="news_content_txt">
+                                            <p class="news_content_date">12 Dec 2022</p>
+                                            <h3>2022년 12월 판다메일</h3>
+                                            <p class="news_content_content">12월 판다메일은 COP27 소식으로 시작합니다. wwf korea 안녕하세요 WWF-KOREA&middot;&middot;&middot;</p>
+                                            <div class="go_news_content"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news_content_Box">
+                                    <a href="#news">
+                                        <div class="news_content_img">
+                                            <img src="./images/news08.jpg" alt="뉴스8"> 
+                                        </div>
+                                        <div class="news_content_txt">
+                                            <p class="news_content_date">31 Oct 2022</p>
+                                            <h3>2022년 11월 판다메일</h3>
+                                            <p class="news_content_content">11월 판다메일 소식은 2022 지구생명보고서 소식으로 시작합니다. 11월 판다&middot;&middot;&middot;</p>
+                                            <div class="go_news_content"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news_content_Box">
+                                    <a href="#news">
+                                        <div class="news_content_img">
+                                            <img src="./images/news09.png" alt="뉴스9"> 
+                                        </div>
+                                        <div class="news_content_txt">
+                                            <p class="news_content_date">29 Sep 2022</p>
+                                            <h3>2022년 10월 판다메일</h3>
+                                            <p class="news_content_content">10월 판다메일은 WWF가 각 국가의 금융당국에 강력한 정책을 촉구하는 내용을&middot;&middot;&middot;</p>
+                                            <div class="go_news_content"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <!-- /News -->
+
+            <article class="mid_banner" id="mid_banner">
+                <div class="mid_banner_wrap">
+                    <div class="w1480">
+                        <div class="mid_banner_title_wrap">
+                            <p>함께라면 가능합니다.</p>
+                            <h2 class="oswald">TOGETHER POSSIBLE</h2>
+                        </div>
+                        <a href="#mid_banner">후원하기</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="main_exer" id="main_exer">
+                <div class="exer_wrap w1480">
+                    <div class="exer_title">
+                        <h2 class="oswald">WWF 활동분야</h2>
+                        <p>WWF는 사람과 자연이 조화로운 미래를 만들어가기 위해 아래 6개 보전 영역에 걸쳐 활동하고 있습니다.</p>
+                    </div>
+                    <div class="exer_content">
+                        <ul>
+                            <li>
+                                <a href="#main_exer" class="exer_slide_link">
+                                    <div class="exer_slide">
+                                        <div class="exer_slide01 exer_slide_img"></div>
+                                        <div class="exer_slide_title">
+                                            <h2>CLIMATE & ENERGE</h2>
+                                            <h3>기후·에너지</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#main_exer" class="exer_slide_link">
+                                    <div class="exer_slide">
+                                        <div class="exer_slide02 exer_slide_img"></div>
+                                        <div class="exer_slide_title">
+                                            <h2>OCEANS</h2>
+                                            <h3>해양</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#main_exer" class="exer_slide_link">
+                                    <div class="exer_slide">
+                                        <div class="exer_slide03 exer_slide_img"></div>
+                                        <div class="exer_slide_title">
+                                            <h2>WILDLIFE</h2>
+                                            <h3>야생동물</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#main_exer" class="exer_slide_link">
+                                    <div class="exer_slide">
+                                        <div class="exer_slide04 exer_slide_img"></div>
+                                        <div class="exer_slide_title">
+                                            <h2>FOOD</h2>
+                                            <h3>식량</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#main_exer" class="exer_slide_link">
+                                    <div class="exer_slide">
+                                        <div class="exer_slide05 exer_slide_img"></div>
+                                        <div class="exer_slide_title">
+                                            <h2>FRESHWATER</h2>
+                                            <h3>담수</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#main_exer" class="exer_slide_link">
+                                    <div class="exer_slide">
+                                        <div class="exer_slide06 exer_slide_img"></div>
+                                        <div class="exer_slide_title">
+                                            <h2>FORESTS</h2>
+                                            <h3>산림</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="new_deal" id="new_deal">
+                <div class="new_deal_wrap">
+                    <div class="new_deal_content w1480">
+                        <div class="new_deal_title oswald">
+                            <h2>
+                                NEW DEAL<br>
+                                FOR NATURE<br>
+                                AND PEOPLE<br>
+                            </h2>
+                            <h3>자연과 사람을 위한 뉴딜</h3>
+                            <h4>
+                                생물다양성의 손실을 막고 2030년까지
+                            </h4>
+                            <h5>자연을 회복의 길로 전환하기 위한 3가지 주요 목표</h5>
+                        </div>
+                        <div class="new_deal_title_img">
+                            <img src="./images/articleImg.png" alt="뉴딜이미지">
+                        </div>
+                    </div>
+                    <div class="new_deal_list w1480">
+                        <ul>
+                            <li>
+                                <img src="./images/main_newdeal_icon01.jpg" alt="뉴딜이미지1">
+                                <div class="new_deal_list_text">
+                                    <h2>자연 서식지의 보전</h2>
+                                    <p>보전 노력의 확대와 지속가능한 관리 및 복원</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./images/main_newdeal_icon02.jpg" alt="뉴딜이미지2">
+                                <div class="new_deal_list_text">
+                                    <h2>생물종 멸종 방지</h2>
+                                    <p>지속가능하지 않은 방식의 야생 생물종 착취와 불법 거래 종식</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./images/main_newdeal_icon03.jpg" alt="뉴딜이미지3">
+                                <div class="new_deal_list_text">
+                                    <h2>자연 서식지의 보전</h2>
+                                    <p>에너지, 농업, 어업, 인프라와 같은 여러 분야에서 지속가능한 비즈니스로의 전환과 이를 뒷받침 하기 위한 금융 흐름의 변화 도모</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="camp" id="camp">
+                <div class="camp_wrap">
+                    <div class="camp_title">
+                        <h2>캠페인</h2>
+                        <p>우리의 지구를 지키기 위한 WWF의 캠페인에 함께 해주세요.</p>
+                    </div>
+                    <div class="camp_content">
+                        <ul>
+                            <li>
+                                <a href="#camp">
+                                    <div class="camp_imgBox">
+                                        <img src="./images/campain01.jpg" alt="캠페인1">
+                                    </div>
+                                    <div class="camp_txtBox">
+                                        <div class="camp_subTitle">북극곰 보호</div>
+                                        <p>북극곰은 먹이사슬의 최상위 포식자라는 것 알고 계셨나요?그렇기에 북극곰이 북극 생태계의 균형을 ...</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#camp">
+                                    <div class="camp_imgBox">
+                                        <img src="./images/campain02.jpg" alt="캠페인2">
+                                    </div>
+                                    <div class="camp_txtBox">
+                                        <div class="camp_subTitle">기후위기</div>
+                                        <p>기후위기에 대응하기 위해서는 기후위기가 무엇인지 그리고 그 원인에 대해서 제대로 알고있어야 합니다.</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#camp">
+                                    <div class="camp_imgBox">
+                                        <img src="./images/campain03.jpg" alt="캠페인3">
+                                    </div>
+                                    <div class="camp_txtBox">
+                                        <div class="camp_subTitle">멸종위기 동물 보호</div>
+                                        <p>WWF-Korea와 함께 멸종위기에 처한 동물들을 지켜주세요.</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#camp">
+                                    <div class="camp_imgBox">
+                                        <img src="./images/campain04.jpg" alt="캠페인4">
+                                    </div>
+                                    <div class="camp_txtBox">
+                                        <div class="camp_subTitle">플라스틱 프리</div>
+                                        <p>우리의 일상에서 뗄래야 뗄 수 없는 플라스틱. 플라스틱의 생산과 폐기까지의 생애를 알아보세요.</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="footer_gnb" id="footer_gnb">
+                <div class="footer_gnb_wrap w1480">
+                    <div class="cf">
+                        <div class="f_gnb">
+                            <div class="f_gnb_fst">
+                                <ul>
+                                    <li class="f_gnb_title">소개
+                                        <ul>
+                                            <li><a href="#footer_gnb">기관소개</a></li>
+                                            <li><a href="#footer_gnb">연혁</a></li>
+                                            <li><a href="#footer_gnb">투명경영</a></li>
+                                            <li><a href="#footer_gnb">함께하는 사람들</a></li>
+                                            <li><a href="#footer_gnb">인재채용</a></li>
+                                            <li><a href="#footer_gnb">자원봉사자 모집</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="f_gnb_title">활동
+                                        <ul>
+                                            <li><a href="#footer_gnb">기후에너지</a></li>
+                                            <li><a href="#footer_gnb">해양</a></li>
+                                            <li><a href="#footer_gnb">야생동물</a></li>
+                                            <li><a href="#footer_gnb">식량</a></li>
+                                            <li><a href="#footer_gnb">담수</a></li>
+                                            <li><a href="#footer_gnb">산림</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="f_gnb_title f_gnb_no_title">&nbsp;
+                                        <ul>
+                                            <li><a href="#footer_gnb">금융</a></li>
+                                            <li><a href="#footer_gnb">비즈니스</a></li>
+                                            <li><a href="#footer_gnb">기업파트너십</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="f_gnb_title">참여
+                                        <ul>
+                                            <li><a href="#footer_gnb">생활 실천</a></li>
+                                            <li><a href="#footer_gnb">어스아워</a></li>
+                                            <li><a href="#footer_gnb">기업참여</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="f_gnb_snd">
+                                <ul>
+                                    <li class="f_gnb_title">소식
+                                        <ul>
+                                            <li><a href="#footer_gnb">소식</a></li>
+                                            <li><a href="#footer_gnb">언론보도</a></li>
+                                            <li><a href="#footer_gnb">판다메일</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="f_gnb_title">자료
+                                        <ul>
+                                            <li><a href="#footer_gnb">보고서</a></li>
+                                            <li><a href="#footer_gnb">영상자료</a></li>
+                                            <li><a href="#footer_gnb">기후위기 교육페이지</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="f_gnb_title">후원
+                                        <ul>
+                                            <li><a href="#footer_gnb">북극곰보호</a></li>
+                                            <li><a href="#footer_gnb">후원 안내</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer_letter">
+                            <div class="footer_letter_title">
+                                <h2>뉴스레터 구독하기</h2>
+                                <p>
+                                    WWF 뉴스레터를 구독하고 최신 소식을 받아보세요<br>
+                                    입력한 메일 주소로 WWF 뉴스레터를 받아보실 수 있습니다.
+                                </p>
+                            </div>
+                            <div class="footer_letter_content">
+                                <form action="#" method="post">
+                                    <label for="email">이메일 주소</label>
+                                    <input type="email" id="email" name="email">
+                                    <input type="submit" value="구독신청">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_link_wrap cf">
+                        <div class="footer_link_left">
+                            <a href="#footer_gnb">후원회원 약관</a>
+                            <a href="#footer_gnb">개인정보처리방침</a>
+                            <a href="#footer_gnb">자주묻는질문</a>
+                            <a href="#footer_gnb">문의</a>
+                        </div>
+                        <div class="footer_link_right">
+                            <p class="oswald">FOLLOW US</p>
+                            <a href="#footer_gnb"><img src="./images/icon_insta.jpg" alt="인스타그램"></a>
+                            <a href="#footer_gnb"><img src="./images/icon_fb.jpg.png" alt="페이스북"></a>
+                            <a href="#footer_gnb"><img src="./images/icon_yout.jpg" alt="유튜브"></a>
+                            <a href="#footer_gnb"><img src="./images/icon_n_blog.png" alt="블로그"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <!-- /Main -->
+        <!-- Footer -->
+        <footer class="footer" id="footer">
+            <div class="footer_wrap w1480">
+                <div class="footer_logo">
+                    <a href="#footer">
+                        <img src="./images/logo_footer.png" alt="로고">                        
+                    </a>
+                </div>
+                <div class="footer_content">
+                    <h2>재단법인 한국세계자연기금</h2>
+                    <div class="footer_info">
+                        <dl>
+                            <dt>대표자</dt>
+                            <dd>홍정욱</dd>
+                        </dl>
+                        <dl>
+                            <dt>고유번호</dt>
+                            <dd>101-82-23485</dd>
+                        </dl>
+                        <dl>
+                            <dt>주소</dt>
+                            <dd>서울특별시 종로구 종로 47 (공평동) SC제일은행본점빌딩 15층 (재) 한국세계자연기금 </dd>
+                        </dl>
+                        <dl>
+                            <dt>대표전화</dt>
+                            <dd>02-722-1601</dd>
+                        </dl>
+                    </div>
+                    <div class="footer_info">
+                        <dl>
+                            <dt>후원 문의</dt>
+                            <dd>members@wwfkorea.or.kr</dd>
+                        </dl>
+                        <dl>
+                            <dt>기업 문의</dt>
+                            <dd>partnership@wwfkorea.or.kr</dd>
+                        </dl>
+                        <dl>
+                            <dt>홍보 및 마케팅 문의</dt>
+                            <dd>marketing@wwfkorea.or.kr</dd>
+                        </dl>
+                        <dl>
+                            <dt>기타 문의</dt>
+                            <dd>info@wwfkorea.or.kr</dd>
+                        </dl>
+                    </div>
+                    <div class="footer_last">
+                        <p>© 2021 WWF – World Wide Fund For Nature (also known as World Wildlife Fund).<span>Creative Commons licence.</span></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /Footer -->
+        <!-- Aside -->
+        <aside class="aside">
+            <button class="top_button"><a href="#"></a></button>
+        </aside>
+        <!-- /Aside -->
+
+    </div>
+</body>
+<!-- 페이지 JS -->
+<script src="./js/wwf.js"></script>
+</html>

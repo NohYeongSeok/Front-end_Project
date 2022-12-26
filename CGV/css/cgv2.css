@@ -1,0 +1,653 @@
+@charset "utf-8";
+.w990 {
+    width: 990px;
+    margin: 0 auto;
+}
+#wrap {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0 auto;
+}
+
+/* Header */
+/* Top Nav Menu */
+header {
+    padding: 30px 0 0;
+}
+.topNav {
+    margin-bottom: 30px;
+}
+header .topNav .logo {
+    float: left;
+}
+.logo img {
+    width: 117px;
+    height: 53px;
+}
+.logo span {
+    vertical-align: bottom;
+    color: #222;
+}
+header .topNav .topAccount {
+    float: right;
+    color: #666;
+    font-size: 13px;
+}
+.topAccount ul {
+    position: relative;
+}
+.topAccount ul li {
+    float: left;
+    margin-left: 30px;  
+    text-align: center;
+}
+.topAccount ul li a img {
+    width: 36px;
+    height: 36px;
+}
+.topAccount #hdcard{
+    width: 136px;
+    height: 39px;
+    position: absolute;
+    left: -140px;
+    top: 10px;
+    z-index: 1;
+}
+
+/* GNB Menu */
+.gnb_wrap {
+    border-top: 1px solid #eee;
+    border-bottom: 2px solid #fb4357;
+}
+.gnb {
+    color: #222;
+    font-weight: 600;
+    height: 50px;
+    position: relative;
+}
+.gnb ul {
+    float: left;
+    position: relative;
+}
+.gnb ul li {
+    margin: 14px 0;
+    margin-right: 50px;
+    float: left;
+}
+.gnb ul li:nth-child(3) {
+    color: #fb4357;
+}
+.gnb fieldset {
+    height: 30px;
+    width: 210px;
+    float: right;
+    position: absolute;
+    top: 10px;
+    left: 780px;
+    border: none;
+    border-left: 2px solid #eee;
+    border-right: 2px solid #eee;
+}
+.gnb fieldset input {
+    height: 23px;
+    width: 160px;
+    position: absolute;
+    top: 1px;
+    left: 10px;
+    z-index: 1;
+    border: none;
+}
+.gnb fieldset button {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 0;
+    left: 170px;
+    z-index: 1;
+    background-image: url(../images/search.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.snb_wrap {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    position: absolute;
+    top: 168px;
+    left: 0;
+    z-index: 1;
+}
+.snb {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 320px;
+}
+.snb dl {
+    display: flex;
+    flex-flow: column;
+    width: 16.66%;
+    padding-left: 15px;
+    border-right: 1px solid #e9e9e9;
+}
+.snb dl:last-child {
+    border-right: none;
+}
+.snb dl dt {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;   
+}
+.snb dl dd {
+    margin-bottom: 9px;
+    font-size: 14px;
+    color: #666
+}
+.snb a:hover {
+    text-decoration: underline;
+}
+/* Main */
+/* Slide */
+main .silde {
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+}
+
+/* Movie Chart */
+main .movieChart {
+    background-color: rgba(232, 232, 232, 0.37);
+    height: 462px;
+    padding: 50px 0 60px;
+}
+.chartMenu {
+    margin-bottom: 20px;
+}
+.select_chart_menu{
+    float: left;
+    font-size: 26px;
+    font-weight: 700;
+    font-weight: bold;
+    cursor: pointer;
+    color: #222;
+}
+.nonSelect_chart_menu{
+    float: left;
+    font-size: 26px;
+    font-weight: 400;
+    color: #666;
+    cursor: pointer;
+}
+.chartMenu p:nth-child(2) {
+    float: left;
+    font-size: 12px;
+    line-height: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #d8d8d8;
+}
+.chartMenu p:nth-child(4) {
+    float: right;
+    font-size: 14px;
+    border: 1px solid #d8d8d8;
+    border-radius: 45px;
+    padding: 3px 15px;
+    cursor: pointer;
+}
+.movieListSet {
+    margin-bottom: 15px;
+}
+.movieListSet li {
+    float: left;
+    margin-right: 35px;
+    overflow: hidden;
+    position: relative;
+}
+.movieListSet img {
+    width: 170px;
+    height: 234px;
+    border-radius: 15px;
+}
+.movieListSet li:last-child {
+    margin-right: 0;
+}
+.movieListSet .caption {
+    width: 170px;
+    height: 234px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    top: -234px;
+    z-index: 1;
+    opacity: 0;
+    transition: all linear;
+    padding-top: 77px;
+}
+.movieListSet li:hover .caption {
+    transform: translateY(234px);
+    opacity: 1;
+}
+.movieListSet .caption p {
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid #000;
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.movieListSet .caption p:hover {
+    opacity: 0.8;
+}
+.movieListSet .caption p:first-child {
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: none;
+}
+.movieListSet .caption p:last-child {
+    color: white;
+    background-color: #fb4357;
+    border: none;
+}
+.chartName p {
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+    width: 170px;
+    margin-right: 35px;
+    text-align: center;
+}
+.chartName p:last-child {
+    margin-right: 0;
+}
+.tobeName p {
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+    width: 170px;
+    margin-right: 35px;
+    text-align: center;
+}
+.tobeName p:last-child {
+    margin-right: 0;
+}
+.chartExplain span {
+    width: 170px;
+    margin-right: 35px;
+    text-align: center;
+    float: left;
+}
+.chartExplain span:last-child {
+    margin-right: 0;
+}
+.chartExplain img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-bottom: 2.5px;
+}
+.tobeExplain span {
+    width: 170px;
+    margin-right: 35px;
+    text-align: center;
+    float: left;
+}
+.tobeExplain span:last-child {
+    margin-right: 0;
+}
+.tobeExplain img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-bottom: 2.5px;
+}
+.tobe_wrap {
+    display: none;
+}
+
+/* Event */
+.event {
+    margin-bottom: 60px;
+}
+.event .eventWrap {
+    margin-bottom: 20px;
+    padding-top: 60px;
+}
+.event .eventWrap h2 {
+    font-size: 26px;
+    font-weight: bold;
+    float: left;
+}
+.eventWrap p {
+    float: right;
+    font-size: 14px;
+    border: 1px solid #d8d8d8;
+    border-radius: 45px;
+    padding: 3px 15px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.eventWrap p:last-child {
+    padding: 3px 6px;
+}
+.eventList li {
+    margin-right: 30px;
+    cursor: pointer;
+    float: left;
+}
+.eventList li:last-child {
+    margin-right: 0;
+}
+.eventList li img {
+    width: 310px;
+    height: 207px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    transition: all 0.2s linear;
+}
+.eventList li p:nth-child(2) {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.eventList li p:nth-child(3) {
+    font-size: 14px;
+    color: #666;
+}
+.eventList li img:hover{
+    transform: scale(1.1);
+}
+.eventList li div {
+    height: 207px;
+    overflow: hidden;
+    border-radius: 10px;
+    float: left;
+}
+
+/* Special Hall */
+.special {
+    margin-bottom: 60px;
+}
+.specialMenu {
+    margin-bottom: 20px;
+}
+.specialMenu h2 {
+    font-size: 26px;
+    font-weight: bold;
+    float: left;
+}
+.specialMenu p {
+    float: right;
+    font-size: 14px;
+    border: 1px solid #d8d8d8;
+    border-radius: 45px;
+    padding: 3px 15px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.specialContent .specialPic {
+    float: left;
+}
+.specialContent .specialPic img {
+    width: 500px;
+    height: 264px;
+}
+.specialList {
+    float: right;
+}
+.specialList li {
+    width: 440px;
+    height: 64px;
+    padding: 20px;
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+}
+.specialList li a h3 {
+    font-size: 18px;
+    float: left;
+    z-index: 5;
+}
+.specialList li a p {
+    float: right;
+    background-color: #f6f6f6;
+    color: #666;
+    z-index: 5;
+}
+.specialList li:hover {
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.specialList li:hover h3 {
+    font-weight: bold;
+}
+
+
+/* Goods */
+.goods {
+    margin-bottom: 30px;
+}
+.goods .movieTicketWrap, .giftCardWrap, .comboWrap {
+    width: 320px;
+    height: 375px;
+    padding: 20px;
+    border: 1px solid #e9e9e9;
+    border-radius: 15px;
+    float: left;
+    margin-right: 15px;
+}
+.comboWrap {
+    margin-right: 0;
+}
+.goods h3 {
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+}
+.movieTicketWrap>div>p, .giftCardWrap>div>p, .comboWrap>div>p {
+    font-size: 12px;
+    border: 1px solid #e9e9e9;
+    padding: 3px 15px;
+    width: 66px;
+    border-radius: 20px;
+    float: right;
+    cursor: pointer;
+}
+.movieTicket div, .giftCard div, .combo div {
+    margin-top: 25px;
+}
+.goods img {
+    width: 75px;
+    height: 76px;
+    float: left;
+    margin-right: 15px;
+}
+.movieTicket h4, .giftCard h4, .combo h4 {
+    width: 187px;
+    float: left;
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.movieTicket p, .giftCard p, .combo p {
+    width: 187px;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Notice */
+.notice {
+    margin-bottom: 120px;
+}
+.notice h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.noticeLeft {
+    width: 515px;
+    height: 235px;
+    border: 1px solid #e9e9e9;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 25px;
+    float: left;
+}
+.noticeLeftTop {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.noticeLeftTop h2, .noticeLeftMiddle h2 {
+    margin-right: 30px;
+    float: left;
+}
+.noticeLeftTop a {
+    float: left;
+}
+.noticeLeftTop a:hover {
+    text-decoration: underline;
+}
+.noticeLeftTop>p {
+    font-size: 12px;
+    border: 1px solid #e9e9e9;
+    padding: 3px 15px;
+    width: 66px;
+    border-radius: 20px;
+    float: right;
+    cursor: pointer;
+}
+.noticeLeft hr {
+    height: 1px;
+    border: 0;
+    background-color: #e9e9e9;
+    margin-bottom: 20px;
+}
+.noticeLeftMiddle div {
+    float: left;
+}
+.noticeLeftMiddle div p {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.noticeLeftMiddle div p:nth-child(1) {
+    font-weight: bold;
+}
+.noticeLeftMiddle div p:nth-child(3) {
+    color: #666;
+    margin-bottom: 20px;
+}
+.noticeLeftBottom p {
+    font-size: 14px;
+    padding: 7px 14px;
+    border-radius: 15px;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: #f6f6f6;
+}
+.noticeMiddle {
+    width: 220px;
+    height: 235px;
+    float: left;
+    text-align: center;
+    padding: 21px;
+    border: 1px solid #e9e9e9;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.noticeMiddle p {
+    font-size: 12px;
+}
+.noticeMiddle img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 30px;
+}
+.noticeMiddle p:nth-child(2) {
+    margin-bottom: 30px;
+}
+.noticeMiddle p:nth-child(4) {
+    color: #666;
+}
+.noticeRight {
+    float: right;
+    border-radius: 15px;
+}
+.noticeRight img {
+    height: 235px;
+    border-radius: 15px;
+}
+
+/* Footer */
+footer {
+    margin-bottom: 30px;
+}
+.ad {
+    text-align: center;
+    background-color: #ffdf19;
+}
+.policyList {
+    padding: 23px 0;
+    font-size: 13px;
+    color: #666;
+    border-bottom: 1px solid #e9e9e9;
+    margin-bottom: 23px;
+}
+.policyList ul li {
+    float: left;
+    margin-right: 25px;
+}
+.policyList ul li:hover {
+    text-decoration: underline;
+}
+.policyList ul .policyListBold {
+    font-weight: bold;
+    color: #222;
+    text-decoration: underline;
+}
+
+.companyInfo {
+    font-size: 12px;
+    color: #666;
+    float: left;
+}
+.companyInfo a {
+    text-decoration: underline;
+}
+
+.familySite {
+    float: right;
+}
+.familySite p {
+    font-size: 12px;
+    color: #666;
+}
+#familyWeb {
+    display: flex;
+    outline: 0;
+    border: none;
+}
+#familyWeb select {
+    width: 180px;
+    height: 35px;
+    border: 1px solid #9e9e9e;
+}
+#familyWeb a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #9e9e9e;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
