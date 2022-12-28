@@ -240,7 +240,7 @@ animation-delay: 0.6s;
     width: 400px;
     height: 4px;
     background-color: #ddd;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .about_content p {
     font-size: 3.2rem;
@@ -256,7 +256,7 @@ animation-delay: 0.6s;
 /* Projects */
 .project_img {
     width: 50%;
-    height: 650px;
+    height: 720px;
     padding: 10px;
     border: 2px solid #ddd;
     overflow: hidden;
@@ -465,6 +465,12 @@ footer {
 
 /* 태블릿 미디어쿼리 width 1024px 이하*/
 @media screen and (max-width:1024px){
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    html,body {
+        -ms-overflow-style: none;
+    }
     /* Header */
     .scroll_down {
         width: 100px;
@@ -545,6 +551,12 @@ footer {
 
 /* 모바일 미디어쿼리 */
 @media screen and (max-width:767px){
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    html,body {
+        -ms-overflow-style: none;
+    }
     body {
         word-wrap: break-word;
     }
@@ -648,5 +660,11 @@ footer {
     .top_btn {
         width: 35px;
         height: 35px;
+    }
+    .project_img {
+        height: 500px;
+    }
+    .team_project_img {
+        height: 500px;
     }
 }

@@ -426,7 +426,12 @@ body {
     margin-top: 20px;
 }
 
-
+body::-webkit-scrollbar {
+    display: none;
+}
+html,body {
+    -ms-overflow-style: none;
+}
 
 
 
@@ -645,12 +650,12 @@ body {
         margin-bottom: 80px;
         text-align: center;
     }
-
-
-
-
-
-
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    html,body {
+        -ms-overflow-style: none;
+    }
 
 
 

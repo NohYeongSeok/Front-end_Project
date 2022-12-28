@@ -17,7 +17,7 @@ $(document).ready(function(){
 /* CSS 변경 */
 const sa = 200;
 const changeCSS = 1200;
-const returnCSS = 4000;
+const returnCSS = 5000;
 
 
 $(window).scroll(function(){
@@ -54,8 +54,8 @@ $(window).on('scroll', function(){
 
 var width = $(window).width();
 console.log('위드값 : ' + width);
-const tbchangeCSS = 800;
-const tbreturnCSS = 5400;
+const tbchangeCSS = 900;
+const tbreturnCSS = 7500;
 
 /* 태블릿 미디어쿼리 */
 if(width<=1024){
@@ -80,7 +80,7 @@ if(width<=1024){
 };
 
 const mChangeCSS = 900;
-const mReturnCSS = 4700;
+const mReturnCSS = 6400;
 /* 모바일 미디어쿼리 */
 if(width<768){
     $(window).scroll(function(){

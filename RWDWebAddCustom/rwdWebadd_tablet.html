@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="NohYeongSeok">
+    <meta name="description" content="Portfolio">
+    <title>고기이지</title>
+    <link rel="shortcut icon" href="./images/custom/favicon.jfif">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        html {
+            background-color: #fff;
+        }
+        body {
+            background-color: #fff;
+            background-position: fixed;
+            z-index: -1000;
+        }
+        #frame_wrap {
+            margin: 2.5px auto;
+            text-align: center;
+            width: 1440px;
+            height: 1200px;
+            background-image: url('./images/pad.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+        }
+        .iframe_box {
+            padding-top: 76px;
+            padding-left: 330px;
+        }
+        iframe {
+            display: block;
+            border-radius: 20px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="frame_wrap">
+        <div class="iframe_box">
+            <iframe src="./rwdWebadd.html" frameborder="0" width="768px" height="1056px">
+            </iframe>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+<!-- JS 플러그인 파일 -->
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/prefixfree.min.js"></script>
+<script src="./js/jquery.scrollTo.min.js"></script>
+<!-- 페이지 JS -->
+<script src="./js/index.js"></script>
+</html>
