@@ -118,7 +118,7 @@ header .topNav .topAccount {
     position: absolute;
     top: 168px;
     left: 0;
-    z-index: 1;
+    z-index: 999999;
 }
 .snb {
     display: flex;
